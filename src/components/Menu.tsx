@@ -126,7 +126,6 @@ const menuItems = [
             {i.title}
           </span>
           {i.items.map((item) => {
-            if (item.visible.includes(role)) {
               return (
                 <Link
                   href={item.href}
@@ -137,7 +136,6 @@ const menuItems = [
                   <span className="hidden lg:block">{item.label}</span>
                 </Link>
               );
-            }
           })}
         </div>
       ))}
